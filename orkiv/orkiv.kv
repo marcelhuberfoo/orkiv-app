@@ -1,2 +1,29 @@
-Label:
-  text: "hello world"
+AccountDetailsForm:
+
+<AccountDetailsForm>:
+  anchor_x: 'left'
+  anchor_y: 'top'
+  BoxLayout:
+    orientation: 'vertical'
+    height: '200dp'
+    size_hint_y: None
+    GridLayout:
+      cols: 2
+      row_default_height: '30dp'
+      row_force_default: True
+      spacing: '5dp'
+      padding: '5dp'
+      Label:
+        text: 'Server'
+      TextInput:
+      Label:
+        text: 'Username'
+      TextInput:
+      Label:
+        text: 'Password'
+      TextInput:
+        password: True
+    Button:
+      size_hint_y: None
+      height: '30dp'
+      text: 'Login'
